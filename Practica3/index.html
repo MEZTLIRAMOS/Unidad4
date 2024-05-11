@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- elemento raíz -->
+<html lang="en">
+<head> <!--conjunto de caracteres -->
+    <!--  configuración de la vista -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama</title> <!--titulo-->
+    <link rel="stylesheet" href="./css/style.css"> <!--ruta de estylacion de css-->
+</head>
+<body>
+    <div class="card"> <!--cada uno representando una carta del juego -->
+        <div class="card-content">
+            <div class="card-face card-front"></div> <!--la cara visible-->
+                <div class="card-face card-back">Texto 1</div> <!--la cara oculta-->
+        </div>
+    </div>
+    <div class="card"><!--representa una cara del juego-->
+        <div class="card-content">
+            <div class="card-face card-front2"></div>
+                <div class="card-face card-back">Texto 2</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="card-face card-front3"></div> <!--cara visible-->
+                <div class="card-face card-back">Texto 3</div> <!--cara oculta-->
+        </div>
+    </div>
+    <script> //selecciona todas las cartas
+        /*variable todas las clases card*/
+        var cards = document.querySelectorAll('.card');
+        /*todos los div*/
+        // hace que la carta gire mostrando su cara oculta
+        cards.forEach(function(card) {
+            card.addEventListener('click', function() {
+                card.classList.toggle('flipped');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de Ohm</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+</head>
+<body>
+    <!--clases de Bootstrap "rounded", "container", "border", 
+        y "border-warning" para estilizar el contenido con bordes redondeados 
+        y un borde de color amarillo-->
+    <div class="rounded container border border-warning">
+        <h2>Calcular Resistencia:</h2> <!--encabezado de nivel 2 que muestra el texto-->
+        <form action="" id="resistencia"><!--formulario con el id "resistencia"-->
+            <label for="corriente">valor de la Corriente</label><!--Etiqueta para el campo de entrada.-->
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="corriente"
+            required
+            /><br /><br />
+            <!-- Etiqueta para el campo de entrada del voltaje. -->
+            <label for="voltaje">Valor del voltaje</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="voltaje"
+            required
+            /><br />
+            <!-- Etiqueta para mostrar el resultado del cálculo de resistencia -->
+            <label for="resultado" id="lblResultado">...</label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-warning"
+            onclick="calcularResistencia()"/>
+        </form>
+        <br />
+    </div>
+    <br />
+    <!-- codigo de corriente -->
+    <!--clases de Bootstrap "rounded", "container", "border", 
+    y "border-warning" para estilizar el contenido con bordes 
+    redondeados y un borde de color amarillo -->
+    <div class="rounded container border border-warning">
+        <h2>Calcular Corriente:</h2><!--encabezado de nivel 2 que muestra el texto-->
+        <form action="" id="current"><!--formulario con el id "current"-->
+            <label for="voltajeCurr">Valor del Voltaje</label><!--Etiqueta para el campo de entrada del voltaje.-->
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="voltajeCurr"
+            required
+            /><br /><br />
+            <!-- Etiqueta para el campo de resistencia -->
+            <label for="resistenciaCurr">Valor de la Resistencia</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="resistenciaCurr"
+            required
+            /><br />
+            <!-- Etiqueta para mostrar el resultado -->
+            <label for="Resultado" id="lblCurrResultado">...</label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-warning"
+            onclick="calcularCorriente()"
+            />
+        </form>
+        <br />
+    </div>
+    <br />
+    <!-- codigo de voltaje -->
+     <!-- codigo de corriente -->
+    <!--clases de Bootstrap "rounded", "container", "border", 
+    y "border-warning" para estilizar el contenido con bordes 
+    redondeados y un borde de color amarillo -->
+    <div class="rounded container border border-primary">
+        <h2>Calcular Voltaje:</h2><!--encabezado de nivel 2 que muestra el texto-->
+        <form action="" id="voltaje"><!--formulario con el id "voltaje"-->
+            <label for="corrienteVolt">Valor de la Corriente</label><!--Etiqueta para el campo de entrada del voltaje.-->
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="corrienteVolt"
+            required
+            /><br /><br />
+             <!-- Etiqueta para elcampo voltaje -->
+            <label for="resistenciaVolt">Valor del Voltaje</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="resistenciaVolt"
+            required
+            /><br />
+             <!-- Etiqueta para mostrar el resultado -->
+            <label for="resultado" id="lblVoltResultado">...</label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-info"
+            onclick="calcularVoltaje()"
+            />
+        </form>
+        <br />
+    </div>
+    <br />
+    <script src="../Script/ohm.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/*Establece el contenedor principal 
+  del carrusel con posición relativa, ancho del 100% y 
+  desbordamiento oculto para asegurar que las imágenes 
+  no se desborden del contenedor*/
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* Aplica estilos al contenedor que contiene todas 
+  las diapositivas del carrusel. Utiliza flexbox para alinear 
+  las diapositivas horizontalmente y agrega una transición suave 
+  al cambiar entre diapositivas.*/
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-left: 50%;
+  }
+  /*Define el estilo de cada diapositiva del carrusel. 
+  En este caso, se establece que cada diapositiva ocupe el 50% 
+  del ancho disponible dentro del carrusel.*/
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+  /*botones de control que permiten navegar entre las diapositivas. 
+  Establecen la posición absoluta para que los botones aparezcan sobre 
+  el carrusel, y los posiciona verticalmente en el centro utilizando top: 
+  50% y transform: translateY(-50%). También se les asigna un cursor de 
+  tipo puntero para indicar que son clicables.*/
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  /* Establece la posición izquierda de este botón a 100px desde el borde 
+  izquierdo del contenedor del carrusel, proporcionando así un espacio 
+  visual entre el borde y el botón de control previo.*/
+  .carousel-control-prev {
+    left: 100px;
+  }
+  /*establece la posición derecha del botón a 100px desde el borde derecho 
+  del contenedor del carrusel.*/
+  .carousel-control-next {
+    right: 100px;
+  }
+  

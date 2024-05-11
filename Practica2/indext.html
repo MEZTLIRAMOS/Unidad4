@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Abre la etiqueta HTML y un idioma-->
+<head> <!-- Abre la sección del encabezado de la página html-->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segunda practica</title> <!-- titulo de la pagina-->
+    <link rel="stylesheet" href="css/Style.css"> <!--enlaza la carpeta con el style -->
+</head> <!-- cierre de la seccion-->
+<body> <!--Abre la sección del cuerpo de la página-->
+    <div class="light"> <!--clase llamada light-->
+        <div class="cable"></div> <!--Segunda clase-->
+    <div class="bulb"> <!-- Tercera clase-->
+        <span></span> <!-- elemento de línea utilizado para aplicar estilos -->
+    </div> <!--cierre del primer div-->
+    <div class="switch"> <!--Nuevo div-->
+    <div class="btn"></div> <!-- Div de su clase-->
+    </div> <!--Cierre del div-->
+    </div> <!--Cierre del div-->
+    <script> /* se utiliza para incrustar código JavaScript*/
+        let btn = document.querySelector('.btn'); /*se utiliza para declarar variables*/
+        let body = document.querySelector('body'); /*sirve para seleccionar un elemento*/
+        btn.onclick = function(){
+            body.classList.toggle('on'); /* alternar la presencia de una clase en un elemento*/
+        }
+    </script> <!-- Cierre de la etiqueta script-->
+</body> <!--Cierre del cuerpo-->
+</html> <!-- Cierre del codigo-->

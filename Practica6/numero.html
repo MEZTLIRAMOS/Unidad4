@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Primos</title>
+</head>
+<body>
+    <h1>Numeros Primos.</h1> <!--encabezado de nivel 1 que muestra el texto-->
+    <div id="salida"><!--se utiliza para mostrar el resultado de la verificación de números primos-->
+        <p id="texto-salida" style="padding-left: 10px;"></p><!--párrafo dentro del div "salida" con el 
+            id "texto-salida" y un estilo en línea que agrega un espacio de relleno a la izquierda-->
+    </div>
+</hr>
+<label for="entrada">Ingresa el numero: <br><!--label asociado al input con el id "entrada"-->
+<input type="text" id="entrada"></label><!--Un campo de texto para que el usuario ingrese un número-->
+
+<button onclick="verificarprimo()">Comprobar Numeros Primos </button><!--al hacer clic, ejecuta la función verificarprimo-->
+
+<script src="./Script/primo.js"></script><!--ruta de enlace de js-->
+</body>
+</html>

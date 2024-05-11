@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adivinanza</title>
+<link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<h1>Adivina el Numero</h1> <!--Encabezado que indica el nombre del juego-->
+<p>Adivina que Numero es del 1 al 50:</p><!--instruye al usuario sobre el rango de números para adivinar-->
+<input type="number" id="guessInput"><!--campo de entrada donde el usuario puede ingresar su suposición. 
+    El tipo de entrada es "number" para permitir solo números.-->
+<button onclick="checkGuess()">Enter</button><!--l usuario puede hacer clic para verificar su suposición. 
+Al hacer clic en este botón, se llama a la función "checkGuess()" para verificar la suposición del usuario.-->
+<p id="result"></p><!-- párrafo vacío con un ID "result" donde se mostrará el resultado de la suposición del 
+    usuario (por ejemplo, "¡Correcto!" o "Incorrecto, intente de nuevo").-->
+<button onclick="playAgain()">Volver a Jugar</button><!--botón que permite al usuario jugar nuevamente. 
+Al hacer clic en este botón, se llama a la función "playAgain()" para reiniciar el juego.-->
+
+<script src="./Script/script1.js"></script>
+</body>
+</html>

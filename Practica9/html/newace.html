@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceleracion</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+</head>
+<body>
+    <!--clases de Bootstrap "rounded", "container", "border", 
+    y "border-warning" para estilizar el contenido con bordes 
+    redondeados y un borde de color amarillo -->
+    <div class="rounded container border border-warning">
+        <h2>Calcular Aceleracion:</h2><!--encabezado de nivel 2 que muestra el texto-->
+        <form action="" id="resistencia"><!--formulario con el id "resistencia"-->
+            <label for="fuerza">Valor de la Fuerza</label><!--Etiqueta para el campo de entrada de acelarion.-->
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="fuerza"
+            required
+            /><br /><br />
+             <!-- Etiqueta para elcampo masa -->
+            <label for="voltaje">Valor de la Masa</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="masa"
+            required
+            /><br />
+             <!-- Etiqueta para elcampo de resultado -->
+            <label for="resultado" id="lblResultado">...</label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-warning"
+            onclick="calcularAceleracion()"/>
+        </form>
+        <br />
+    </div>
+    <br />
+    <script src="../Script/newton.js"></script>
+</body>
+</html>

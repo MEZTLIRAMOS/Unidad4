@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+</head>
+<body>
+    <form id="myform">
+        <label for="fname">Nombre</label><br/>
+        <input type="text" id="fname" name="fname" required/><br/>
+        <br />
+        <label for="lname">Apellido</label><br>
+        <input type="text" id="lname" name="lname" required/><br/>
+        <label for="email">Correo Electronico</label><br>
+        <input type="text" id="email" name="email" required/><br/>
+        <label for="rfc">Registro Federal De Contribuyentes</label><br>
+        <input type="text" id="rfc" name="rfc" required/><br/>
+        <br />
+        <input type="button" value="Guardar como PDF" onclick="generatePDF()"/>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js>"></script>
+    <script src="./script/script1.js"></script>
+</body>
+</html>

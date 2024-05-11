@@ -1,0 +1,44 @@
+.card{ /* estilacion de los div*/
+    width: 300px; /*ancho*/
+    height: 300px; /*largo*/
+    position: relative; /*posicion de ello*/
+    perspective: 1000px; /*efecto de 3era dimension  */
+    margin: 10px; 
+    margin-left: auto;/*establece el margen automaticamente*/
+    margin-right: auto;/*margen derecho automaticamente*/
+}
+.card-content{
+    width: 100%; /*ancho*/
+    height: 100%;/*largo*/
+    position: absolute;/*posicion de */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card.flipped .card-content{
+    transform: rotateY(180deg);/*la rotacion de lado*/
+}
+.card-face{
+    width: 100%;/*ancho*/
+    height: 100%; /*largo*/
+    position: absolute;/*posicion */
+    backface-visibility: hidden;
+}
+.card-front{/*estilacion de la cara principal*/
+    background: url(../img/img1.jpg);/* url de la img que se ve al principio*/
+    background-size: cover;
+}
+.card-front2{/*2da estilacion de la cara*/
+    background: url(../img/stitch2.jpg);/*url de la imagen*/
+    background-size: cover;
+}
+.card-front3{/*3era estilacion de la cara */
+    background: url(../img/stitch3.jpg);/*url de la imagen*/
+    background-size: cover;
+}
+.card-back{ /*color de estilacion del reverso*/
+    background: lightblue;/*color de fondo*/
+    transform: rotateY(180deg);/*donde va a rotar*/
+    display: flex;
+    justify-content: center; /*legtra en centracion*/
+    align-items: center;
+}

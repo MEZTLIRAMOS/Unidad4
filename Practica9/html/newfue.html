@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuerza</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+</head>
+<body>
+    <!--clases de Bootstrap "rounded", "container", "border", 
+    y "border-warning" para estilizar el contenido con bordes 
+    redondeados y un borde de color amarillo -->
+    <div class="rounded container border border-prymary">
+        <h2>Calcular Fuerza:</h2><!--encabezado de nivel 2 que muestra el texto-->
+        <form action="" id="resistencia"><!--formulario con el id "resistencia"-->
+            <label for="masa">valor de la Masa</label><!--Etiqueta para el campo de enentrada de la masa-->
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="masa"
+            required
+            /><br /><br />
+            <!-- Etiqueta para elcampo aceleracion -->
+            <label for="aceleracion">Valor de la Aceleracion</label><br />
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="aceleracion"
+            required
+            /><br />
+            <!-- Etiqueta para elcampo de resultado -->
+            <label for="resultado" id="lblResultado">...</label>
+            <br />
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-warning"
+            onclick="calcularFuerza()"/>
+        </form>
+        <br />
+    </div>
+    <br />
+    <script src="../Script/newton.js"></script>
+</body>
+</html>
